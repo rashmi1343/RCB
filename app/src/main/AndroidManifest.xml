@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@mipmap/rcb_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/rcb_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.HolidaypdfActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.WebViewActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".ui.ViewImgActivity" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.loginrcbActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.otpverifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DashBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PersonalDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AcademicdetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.GuardiandetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ViewPdfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.BankdetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.StudentfeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AcdemiccalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AssignmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HolidaysActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.ExaminationActivity"
+            android:screenOrientation="portrait" />
+
+        <!--
+<activity android:name=".ui.ViewPdfnewActivity"
+            android:screenOrientation="portrait" />
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.app.rcb.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.rcb.ui.loginrcbActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/dash_heading_txt"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"></ImageView>
+
+        <TextView
+            android:id="@+id/tvloginviaphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:text="Login via Email"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            ></TextView>
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:background="@drawable/edittext_shape"-->
+<!--            android:hint="Please Enter Mobile No"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textColorHint="@color/black"-->
+<!--            android:id="@+id/edtmobno"-->
+<!--            android:imeOptions="actionDone"-->
+<!--            android:inputType="number"-->
+<!--            android:singleLine="true"-->
+<!--            android:padding="10dp"-->
+<!--            ></EditText>-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_shape"
+            android:hint="Please Enter Your Email id"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:id="@+id/edtusername"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:padding="10dp"
+            ></EditText>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/remem_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"></CheckBox>
+
+            <TextView
+                android:id="@+id/remember_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember Me"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/remem_check"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"></TextView>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_light"
+            ></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Otp will be send on Registered Email"
+            android:textSize="20dp"
+            android:id="@+id/tvsignup"
+
+            ></TextView>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">RCB</string>
+    <string name="logout_text">Do You Really want to Logout?</string>
+    <string name="nav_header_title">Vivek Chandra </string>
+    <string name="nav_header_subtitle">abc@broadwayinfotech.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="fee_detail">Fee Details</string>
+    <string name="strview">View</string>
+    <string name="your_string"><u>Start Date</u></string>
+    <string name="end_string"><u>End Date</u></string>
+    <string-array name="city_list">
+        <item>Select State</item>
+        <item>Andhra pradesh</item>
+        <item>Assam</item>
+        <item>Arunachal pradesh</item>
+        <item>Bihar</item>
+        <item>Gujrat</item>
+        <item>Haryana</item>
+        <item>Himachal pradesh</item>
+        <item>Jammu &amp; kashmir</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil nadu</item>
+        <item>Tripura</item>
+        <item>Uttar pradesh</item>
+        <item>West bengal</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Pondichery</item>
+        <item>Lakshdweep</item>
+        <item>Daman &amp; diu</item>
+        <item>Dadra &amp; nagar</item>
+        <item>Chandigarh</item>
+        <item>Andaman &amp; nicobar</item>
+        <item>Uttaranchal</item>
+        <item>Jharkhand</item>
+        <item>Chattisgarh</item>
+    </string-array>
+
+
+    <string-array name="bloodgroup_list">
+        <item>Select Blood Group</item>
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+
+</resources>

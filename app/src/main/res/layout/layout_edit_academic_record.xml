@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_account_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Update Academic Details"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_account_detail"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvqualificationname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="30dp"
+                android:text="Qualification"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+
+            <EditText
+                android:id="@+id/edtqualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+            <TextView
+                android:id="@+id/tvinstitute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="Institute"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+
+            <EditText
+                android:id="@+id/edtinstitute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+
+            <TextView
+                android:id="@+id/tvboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Board"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edtboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+
+            <TextView
+                android:id="@+id/tvsubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:text="Subject"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edtsubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+
+            <TextView
+                android:id="@+id/tvpassingyear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:text="Passing Year"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edtpassingyear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+
+            <TextView
+                android:id="@+id/tvpercentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:text="Percentage"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edtpercentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+
+            <TextView
+                android:id="@+id/tvcgpa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:visibility="gone"
+                android:text="CGPA"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/edtcgpa"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"></EditText>
+
+
+            <LinearLayout
+                android:id="@+id/llalreadyuploadedacademic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/curve_background"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <ImageView
+                    android:id="@+id/imgacademic"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:textSize="24dp"></ImageView>
+
+                <TextView
+                    android:id="@+id/tvviewicon"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:text="View Document"
+                   android:textColor="@color/color_bttn"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="14dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvdeleteicon"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:textSize="24dp"></TextView>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnuploadaacademic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/color_bttn"
+                android:text="Upload"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"></Button>
+
+            <Button
+                android:id="@+id/btnsaveacademic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/color_bttn"
+                android:text="Save"
+                android:textColor="@android:color/white"></Button>
+
+            <Button
+                android:id="@+id/btncancelacademicdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/color_bttn"
+                android:text="Cancel"
+                android:textColor="@android:color/white"></Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

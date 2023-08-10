@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mapboxWhite"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/llalyoutfee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/lyoutsession"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvsessionyear"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Programme Duration : "
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvsessionyearval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Session Year"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyoutsemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvsemester"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Semesters : "
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvsemesterval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Ist Semester"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyoutschemename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvschemename"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Scheme Name :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvschemenameval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="BWIT"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lyoutschemeprintname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvschemeprintname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="0.5"
+                        android:text="Scheme Print Name :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvschemeprintnameval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="BWIT"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyoutfeename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvfeename"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Fee Name :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvfeenameval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Tution Fee"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyoutfeeprintname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvfeeprintname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Fee Print Name :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvfeeprintnameval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Tution Fee"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lyoutfeecode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvfeecode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Fee Code :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvfeecodeval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="FEE002"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lyoutcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvcategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Category :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvcategoryval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lyoutfeeamt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvfeeamt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Fee Amount :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvfeeamtval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="INR 500"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lyoutdiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvdiscount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Discount :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvdiscountval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyoutnetpayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvnetpayment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Net Payment :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvnetpaymentval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lyoutduedate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvduedate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Due Date :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvduedateval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="22-11-2021"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lyouttotalpaid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvtotalpaid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Total Paid :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvtotalpaidval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="INR 100"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lyoutrefund"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvrefund"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Refund :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvrefundval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="INR 0"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutbalamt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvbalamt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Balance Amount :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvbalamtval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="INR 400"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutpaymentstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvpaymentstatus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text="Payment Status :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvpaymentstatusval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:text=""
+                        android:textColor="@color/color_bttn"
+                        android:textSize="16dp"></TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
+</LinearLayout>

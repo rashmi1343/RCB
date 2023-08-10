@@ -1,0 +1,112 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-kapt"
+
+apply plugin: 'kotlin-android-extensions'
+
+
+
+android {
+
+
+    compileSdkVersion 33
+    buildToolsVersion "30.0.3"
+
+    androidExtensions {
+        experimental = true
+    }
+    defaultConfig {
+        applicationId "com.app.rcb"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        resConfigs 'en', 'fr'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            shrinkResources true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    namespace 'com.app.rcb'
+
+
+}
+def daggerVersion = '2.13'
+def roomDbVersion = '2.4.2'
+//def lifecycleVersion = '1.1.1'
+//def espressoVersion = '3.2.0'
+//def junitVersion = '4.12'
+//def testRunnerVersion = '1.2.0'
+//def coroutineVersion = '1.2.1'
+//def rxKotlinVersion = '2.4.0'
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.32"
+    implementation 'androidx.core:core-ktx:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation "com.squareup.picasso:picasso:2.71828"
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+    //implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:4.4.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.4.1'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+   // implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    //implementation "android.arch.persistence.room:runtime:1.0.0"
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.0'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    implementation 'id.zelory:compressor:2.1.0'
+
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2"
+  //  implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.2.0'
+    implementation 'es.voghdev.pdfviewpager:library:1.1.2'
+    //dependency for architecture component
+ //   implementation "android.arch.lifecycle:extensions:$lifecycleVersion"
+  //  implementation "android.arch.lifecycle:viewmodel:$lifecycleVersion"
+
+    //dependency for room persistance database
+    implementation "androidx.room:room-runtime:$roomDbVersion"
+    kapt  "androidx.room:room-compiler:$roomDbVersion"
+    implementation "androidx.room:room-ktx:$roomDbVersion"
+
+
+    //dependency for dagger
+
+   // testImplementation "junit:junit:$junitVersion"
+   // androidTestImplementation "androidx.test:runner:$testRunnerVersion"
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.4'
+}

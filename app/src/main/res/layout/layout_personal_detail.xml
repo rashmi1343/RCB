@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/abt_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:id="@+id/back_past_layout_detail"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circular_layout">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/back"></ImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/abt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:text="My Profile"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewline"
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:layout_below="@+id/abt_header_layout"
+        android:background="@color/color_silver"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewline"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_personal_Detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="Personal Detail"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_institution_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Name of Institution"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <!--<EditText
+                        android:id="@+id/edt_inst_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        ></EditText>-->
+
+                    <Spinner
+                        android:id="@+id/spincentername"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></Spinner>
+
+                    <TextView
+                        android:id="@+id/tv_prog_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Name of Programme"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <!-- <EditText
+                         android:id="@+id/edt_prog_name"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         ></EditText>-->
+                    <Spinner
+                        android:id="@+id/spinprgname"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></Spinner>
+
+                    <TextView
+                        android:id="@+id/tv_branch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Branch"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <!-- <EditText
+                         android:id="@+id/edt_branch"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         ></EditText>-->
+                    <Spinner
+                        android:id="@+id/spinbranch"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></Spinner>
+
+                    <TextView
+                        android:id="@+id/tv_specialization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Specialization"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <Spinner
+                        android:id="@+id/spinspecialization"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></Spinner>
+
+                    <TextView
+                        android:id="@+id/tv_program_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Programme Duration"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <Spinner
+                        android:id="@+id/spinprgduration"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></Spinner>
+
+                    <TextView
+                        android:id="@+id/tv_acadamic_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Academic Year"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <!--<EditText
+                        android:id="@+id/edt_academic_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        ></EditText>-->
+
+
+                    <Spinner
+                        android:id="@+id/spinacademicyear"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></Spinner>
+
+
+                    <TextView
+                        android:id="@+id/tv_season"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Session"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <!-- <EditText
+                         android:id="@+id/edt_branch"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         ></EditText>-->
+                    <Spinner
+                        android:id="@+id/spinseason"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></Spinner>
+
+
+                    <TextView
+                        android:id="@+id/tv_student_first_nme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Student First Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <EditText
+                        android:id="@+id/edt_student_first_nme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></EditText>
+
+
+                    <TextView
+                        android:id="@+id/tv_student_middle_nme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Student Middle Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <EditText
+                        android:id="@+id/edt_student_middle_nme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></EditText>
+
+
+                    <TextView
+                        android:id="@+id/tv_student_last_nme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Student Last Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <EditText
+                        android:id="@+id/edt_student_last_nme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></EditText>
+
+
+                    <TextView
+                        android:id="@+id/tv_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Date of Birth (MM/DD/YYYY)"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <EditText
+                        android:id="@+id/edt_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></EditText>
+
+
+                    <TextView
+                        android:id="@+id/tv_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Gender"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <!--  <EditText
+                          android:id="@+id/edt_gender"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          ></EditText>-->
+
+                    <Spinner
+                        android:id="@+id/spingender"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></Spinner>
+
+                    <TextView
+                        android:id="@+id/tv_maritial_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Marital Status"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"></TextView>
+
+                    <!-- <EditText
+                         android:id="@+id/edt_branch"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         ></EditText>-->
+                    <Spinner
+                        android:id="@+id/spinmaritalstatus"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:visibility="gone"></Spinner>
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Phone"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <EditText
+                        android:id="@+id/edt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:enabled="false"></EditText>
+
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="E-mail"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <EditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:enabled="false"></EditText>
+
+
+                    <!-- <Button
+                         android:id="@+id/btnsubmit"
+                         android:layout_marginTop="10dp"
+                         android:background="@color/color_bttn"
+                         android:text="Submit for Review"
+                         android:textColor="@android:color/white"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"></Button>-->
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_photograph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:text="Photograph"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <ImageView
+                        android:id="@+id/imgphoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></ImageView>
+
+                    <LinearLayout
+                        android:id="@+id/llayoutphoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnuploadphoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#007bff"
+                            android:textAllCaps="false"
+                            android:text="Upload"
+                            android:textColor="#fff"></Button>
+
+                        <Button
+                            android:id="@+id/btnviewphoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="#007bff"
+                            android:textAllCaps="false"
+                            android:text="View"
+                            android:textColor="#fff"></Button>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_charactercertificate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Character Certificate"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <ImageView
+                        android:id="@+id/imgcharactercertificate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></ImageView>
+
+                    <LinearLayout
+                        android:id="@+id/llayoutcertifcate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnuploadchcertificate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:background="#007bff"
+                            android:textAllCaps="false"
+                            android:visibility="gone"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:text="Upload"
+                            android:textColor="#fff"></Button>
+
+
+                        <Button
+                            android:id="@+id/btnviewchcertificate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                         android:textSize="14dp"
+                            android:background="#007bff"
+                            android:textAllCaps="false"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:text="View Certificate"
+                            android:textColor="#fff"></Button>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/img_layout_relative_cc"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                        <ProgressBar
+                            android:id="@+id/upload_progress_cc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="20dp"
+                            android:visibility="gone"></ProgressBar>
+
+                        <LinearLayout
+                            android:id="@+id/img_layout_cc"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/pdf_img_cc"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"></ImageView>
+
+                            <ImageView
+                                android:id="@+id/tvdeleteicon_cc"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/close_icon"></ImageView>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_studentsignature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Signature of the Student"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"></TextView>
+
+                    <ImageView
+                        android:id="@+id/imgstudentsignature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"></ImageView>
+
+
+                    <LinearLayout
+                        android:id="@+id/llayoutsignature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnuploadsignature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:textSize="14dp"
+                            android:background="#007bff"
+                            android:textAllCaps="false"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+
+                            android:text="Upload"
+                            android:textColor="#fff"></Button>
+
+
+                        <Button
+                            android:id="@+id/btnviewsignature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textSize="14dp"
+                            android:background="#007bff"
+                            android:textAllCaps="false"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+
+                            android:text="View Signature"
+                            android:textColor="#fff"></Button>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/img_layout_relative_sig"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone">
+
+                        <ProgressBar
+                            android:id="@+id/upload_progress_sig"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="20dp"
+                            android:visibility="gone"></ProgressBar>
+
+                        <LinearLayout
+                            android:id="@+id/img_layout_sig"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/pdf_img_sig"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"></ImageView>
+
+                            <ImageView
+                                android:id="@+id/tvdeleteicon_sig"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/close_icon"></ImageView>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btngurdiandetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/color_bttn"
+                android:text="Guardian Detail"
+                android:textColor="@android:color/white"></Button>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

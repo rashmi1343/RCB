@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/color_pad"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/nav_header_desc"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:src="@drawable/person_user" />
+      <!--  <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/nav_header_desc"
+            android:paddingTop="@dimen/nav_header_vertical_spacing" />-->
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_headerf_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="montserrat/Montserrat-Medium.otf"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/user_headerl_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="montserrat/Montserrat-Medium.otf"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView_gmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_layout"
+            android:layout_marginLeft="20dp"
+            android:text="@string/nav_header_subtitle" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/home_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/home"></ImageView>
+
+        <TextView
+            android:id="@+id/home_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="Home"
+            android:textColor="@color/color_silver"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/open_job_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/open_job_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/shipped"></ImageView>
+        <TextView
+            android:id="@+id/open_job_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="Open Jobs"
+            android:textColor="@color/color_silver"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/active_job_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/active_job_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/shipped"></ImageView>
+        <TextView
+           android:id="@+id/active_job_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="Active Jobs"
+            android:textColor="@color/color_silver"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/past_job_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/past_job_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/shipped"></ImageView>
+
+        <TextView
+            android:id="@+id/past_job_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="Past Jobs"
+            android:textColor="@color/color_silver"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passed_job_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/passed_job_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/shipped"></ImageView>
+
+        <TextView
+            android:id="@+id/passed_job_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="Passed Jobs"
+            android:textColor="@color/color_silver"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ongoing_job_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ongoing_job_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/shipped"></ImageView>
+
+        <TextView
+            android:id="@+id/ongoing_job_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="Ongoing Jobs"
+            android:textColor="@color/color_silver"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/my_profile_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/myprofile"></ImageView>
+        <TextView
+            android:id="@+id/my_profile_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="My Profile"
+            android:textColor="@color/color_silver"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/support_job_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/support_job_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/help_icon"></ImageView>
+
+        <TextView
+            android:id="@+id/support_job_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="Help"
+            android:textColor="@color/color_silver"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/settings_layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/setting_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_settings"></ImageView>
+        <TextView
+            android:id="@+id/setting_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="Settings"
+            android:textColor="@color/color_silver"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/abt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/abt_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/abticon"></ImageView>
+        <TextView
+            android:id="@+id/abt_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="About"
+            android:textColor="@color/color_silver"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logout_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/logout_new"></ImageView>
+        <TextView
+            android:id="@+id/logout_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="Log Out"
+            android:textColor="@color/color_silver"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

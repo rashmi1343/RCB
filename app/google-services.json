@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "760463304313",
+    "project_id": "rcb001-b835c",
+    "storage_bucket": "rcb001-b835c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760463304313:android:bd937b2583a6d0ff2356a8",
+        "android_client_info": {
+          "package_name": "com.app.rcb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760463304313-801s6gd7mk215792hv0r5fm7flk867uh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLsw_t434WptTb1GdHc08ea-MiySRNjco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760463304313-801s6gd7mk215792hv0r5fm7flk867uh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

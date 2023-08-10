@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llassignmentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/custom_background"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:id="@+id/lllayoutassignmentname"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvassignmentname"
+                android:layout_weight="1"
+                android:text="Assignment Name :"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/tvassignmentval"
+                android:layout_weight="1"
+                android:text="test"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lllayoutcoursename"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvcoursename"
+                android:layout_weight="1"
+                android:text="Course Name :"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/tvcourseval"
+                android:layout_weight="1"
+                android:text="test"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lllayoutduedate"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvduedate"
+                android:layout_weight="1"
+                android:text="Due Date :"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/tvdateval"
+                android:layout_weight="1"
+                android:text="2021-12-07"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lllayoutaction"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvaction"
+                android:layout_weight="1"
+                android:text="Action :"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/tvactionval"
+                android:layout_weight="1"
+                android:text="@string/strview"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#FFFF"
+                android:background="@color/color_dark_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
